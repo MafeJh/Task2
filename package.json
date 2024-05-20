@@ -1,5 +1,7 @@
 {
   "name": "Task2",
+  "version": "0.0.1",
+  "private": false,
   "devDependencies": {
     "@wdio/cli": "^8.36.1",
     "@wdio/local-runner": "^8.36.1",
