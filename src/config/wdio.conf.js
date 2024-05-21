@@ -64,7 +64,7 @@ exports.config = {
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
   // logLevel: "error",
-  logLevel: "debug",
+  logLevel: "error",
   //
   // Set specific log levels per logger
   // loggers:
@@ -74,7 +74,7 @@ exports.config = {
   // - @wdio/local-runner
   // - @wdio/sumologic-reporter
   // - @wdio/cli, @wdio/config, @wdio/utils
-  // Level of logging verbosity: trace | debug | info | warn | error | silent
+  // Level of logging verbosity: trace | debug | info | warn |error  | silent
   // logLevels: {
   //     webdriver: 'info',
   //     '@wdio/appium-service': 'info'

@@ -2,14 +2,14 @@ const BaseComponent = require("../common/base.component");
 
 class CreatedPasteComponent extends BaseComponent {
   constructor() {
-    super(".container");
+    super("div.container div.content");
   }
 
   get titleNamePasted() {
     return this.rootEl.$("div.info-top h1");
   }
 
-  get bashElement() {
+  get bashLinkElement() {
     return this.rootEl.$("//a[@href='/archive/bash']");
   }
 
