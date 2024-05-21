@@ -2,7 +2,7 @@ const BaseComponent = require("./../common/base.component");
 
 class PasteFormComponent extends BaseComponent {
   constructor() {
-    super("#w0");
+    super("div.post-form #w0");
   }
 
   get newPasteTextArea() {

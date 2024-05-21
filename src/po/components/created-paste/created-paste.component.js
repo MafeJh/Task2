@@ -6,9 +6,7 @@ class CreatedPasteComponent extends BaseComponent {
   }
 
   get titleNamePasted() {
-    return this.rootEl.$(
-      "//h1[contains(text(), 'how to gain dominance among developers')]"
-    );
+    return this.rootEl.$("div.info-top h1");
   }
 
   get bashElement() {

@@ -1,14 +1,14 @@
 const { pages } = require("../po/index");
 
 describe("PasteBin Page", () => {
-  let mainPage = null;
-  let createdPastePage = null;
   beforeEach(async () => {
     // Instances
-    mainPage = pages("main");
-    createdPastePage = pages("createdPaste");
+    // mainPage = pages("main");
+    // createdPastePage = pages("createdPaste");
     // Open URL
+    await browser.deleteCookies();
     await pages("main").open();
+    // await browser.deleteCookies();
   });
 
   it("Create a new paste", async () => {
@@ -43,6 +43,7 @@ describe("PasteBin Page", () => {
     console.log(await browser.getUrl());
 
     const pasteNameTitle = await pages("createdPaste").form.titleNamePasted;
+    console.log(pasteNameTitle);
     await pasteNameTitle.waitForExist();
     const title = await pasteNameTitle.getText();
     await expect(title).toContain("how to gain dominance among developers");
